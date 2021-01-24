@@ -1,11 +1,16 @@
 ---
 layout: post
-title: "블록체인 교육 수료"
-date: 2020-12-31
-excerpt: "2개월 간의 블록 체인 교육을 듣고 난 후"
-tags: [Conference]
-comments: true
+title: "블록 체인 교육"
+categories: 안드로이드
+author: bn-tw2020
 ---
+* content
+{:toc}
+
+
+
+
+
 
 ## 첫 시작
 
