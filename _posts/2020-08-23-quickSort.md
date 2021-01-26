@@ -21,26 +21,27 @@ author: bn-tw2020
 
 > 5 7 9 0 3 1 6 2 4 8<br>
 
-* 현재 피벗의 값은 '5'<br>
-  왼쪽에서부터 '5'보다 큰 데이터를 선택하므로 '7' 선택<br>
-  오른쪽에서부터 '5'보다 작은 데이터를 선택하므로 '4'가 선택<br>
+* 현재 피벗의 값은 `5`<br>
+  왼쪽에서부터 `5`보다 큰 데이터를 선택하므로 `7` 선택<br>
+  오른쪽에서부터 `5`보다 작은 데이터를 선택하므로 `4`가 선택<br>
   이제 두 데이터의 위치를 서로 변경
 
 <center>
-`5` `7` 9 0 3 1 6 2 `4` 8<br>
-`5` 4 9 0 3 1 6 2 7 8<br>
-`5` 4 `9` 0 3 1 6 `2` 7 8<br>
-`5` 4 2 0 3 1 6 9 7 8<br>
-`5` 4 2 0 3 `1` `6` 9 7 8<br>
+<span style="color:red">5</span> <span style="color:blue">7</span> 9 0 3 1 6 2 <span style="color:blue">4</span> 8<br>
+<span style="color:red">5</span> 4 9 0 3 1 6 2 7 8<br>
+<span style="color:red">5</span> 4 <span style="color:blue">9</span> 0 3 1 6 <span style="color:blue">2</span> 7 8<br>
+<span style="color:red">5</span> 4 2 0 3 1 6 9 7 8<br>
+<span style="color:red">5</span> 4 2 0 3 <span style="color:blue">1</span> <span style="color:blue">6</span> 9 7 8<br>
+
 </center>
 
 * 위치가 엇갈리는 경우 '피벗'과 '작은 데이터'의 위치를 서로 변경
 
 <center>
-1 4 2 0 3 `5` 6 9 7 8
+1 4 2 0 3 <span style="color:red">5</span> 6 9 7 8
 </center>
 
-`[분활 완료]` 피벗을 기준으로 데이터 묶음을 나누는 작업을 분할이라 합니다.
+* `분활 완료` 피벗을 기준으로 데이터 묶음을 나누는 작업을 분할이라 합니다.
 
 * 위에서 한 방법으로 왼쪽 덩어리, 오른쪽 덩어리를 똑같이 반복해줍니다.
 
