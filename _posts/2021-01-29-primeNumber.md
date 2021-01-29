@@ -7,7 +7,7 @@ author: bn-tw2020
 * content
 {:toc}
 
-## Problem
+## Intro
 
 에라토스테네스의 체는 소수를 구할 때 사용되는 방법입니다.  
 소수를 구하는 여러 가지 방법을 정리하는 글입니다.
@@ -76,7 +76,7 @@ for(int i = 2; i <= n; i++)
 
 for(int i = 2; i <= (int)sqrt(n); i++) {
     if(arr[i]) continue;
-    for(int j = i+i; j <= 1000000; j += i) {
+    for(int j = i+i; j <= n; j += i) {
         arr[i] = true;
     }
 }
