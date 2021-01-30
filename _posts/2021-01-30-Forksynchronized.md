@@ -5,12 +5,15 @@ categories: Git
 author: bn-tw2020
 ---
 
-- content
-  {:toc}
+* content
+{:toc}
 
 ## Intro
 
 서로 협업을 할 때 Fork하여 개발할 때마다 많은데, Fork한 레포지토리를 최신화시키는법을 정리 글입니다.
+
+
+
 
 ---
 
