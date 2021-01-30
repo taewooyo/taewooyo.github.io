@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fork한 repository 최신으로 동기화하기"
+title: "Fork한 repository 동기화하기"
 categories: Git
 author: bn-tw2020
 ---
@@ -17,12 +17,12 @@ author: bn-tw2020
 
 ---
 
-## Fork한 repository 최신으로 동기화 하기
+## Fork한 repository 최신으로 동기화
 
 - 오픈 소스에 단발성이 아닌 지속적으로 contribution 하려 할 때
 - 수정해서 사용하기 위해서 fork 해온 원본 repository에서 업데이트된 부분을 받아올 때 기타 등등
 
-## 원본 repository를 remote repository로 추가
+## 원본 repository를 원격 저장소로 추가
 
 ```
 $ git remote -v
