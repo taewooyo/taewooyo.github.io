@@ -10,7 +10,7 @@ author: bn-tw2020
 ## FirebaseStorage
 
 ```
-FirebaseSotrage는 일종의 문서, 사진, 파일, 동영상을 저장하는 저장소라고 생각하면 될 것 같다.
+FirebaseStorage는 일종의 문서, 사진, 파일, 동영상을 저장하는 저장소라고 생각하면 될 것 같다.
 ```
 
 
