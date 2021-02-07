@@ -7,7 +7,7 @@ author: bn-tw2020
 * content
 {:toc}
 
-## 스패닝 트리
+## Intro
 
 ```
 Spanning Tree와 MST(Minimum Spanning Tree)를 정리하는 글
