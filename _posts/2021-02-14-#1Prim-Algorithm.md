@@ -45,7 +45,7 @@ author: bn-tw2020
    * 최소의 가중치만 사용해서 모든 정점을 연결한다.
 
 
->> 프림 알고리즘 과정
+> 프림 알고리즘 과정
 
 ```
 1. 그래프에서 임의의 하나의 정점을 선택
@@ -105,3 +105,43 @@ author: bn-tw2020
 ```
 
 > 정점은 6개. 간선은 5개로 트리를 이루며 사이클이 존재하지 않는다.
+
+## Code
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+
+bool visited[104];
+vector<pair<int, int>> vec[104];
+priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+
+int prim(int start){ 
+   // start => 0, 임의의 점을 0으로 시작한다.
+   visited[start] = true;
+   for(auto next : vec[start]){
+      int next = next.first;
+      int nextCost = next.second;
+      pq.push({nextCost, next});
+   }
+
+   int answer = 0; // answer 최소 가중치가 저장된다.
+   while (!pq.empty()){
+      int here = pq.top().second;
+      int hereCost = pq.top().first;
+      pq.pop();
+        
+      if (visited[here]) continue;
+      visited[here] = true;
+      answer += hereCost;
+        
+      // 인접한 정점들을 큐에 넣어준다.
+      for(auto next : vec[here]) {
+         int there = next.first;
+         int thereCost = next.second;
+         pq.push({thereCost, there});
+      }
+   }
+   return answer;
+}
+```
