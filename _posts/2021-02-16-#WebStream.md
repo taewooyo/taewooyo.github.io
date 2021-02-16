@@ -74,3 +74,4 @@ author: bn-tw2020
 [DNS정리글](http://blog.naver.com/PostView.nhn?blogId=kostry&logNo=220899042020)
 
 [DNS Query](https://webdir.tistory.com/161)
+[네트워크 동작원리 동영상 링크](https://www.youtube.com/watch?v=oW_EirDkCnM)
