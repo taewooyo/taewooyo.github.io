@@ -80,12 +80,14 @@ author: bn-tw2020
 * 접근 지정자는 PL에서 특정 개체를 선언할 때 외부로부터의 접근을 제한하기 위해 사용되는 예약어
 
 <center>
+
 | 한정자 | 클래스 내부 | 패키지 내부 | 하위 클래스 | 패키지 외부 |
 |:--------|:--------:|--------:|--------:|--------:|
 | public | O | O | O | X |
 | protected | O | O | O | X |
 | default | O | O | X | X |
 | private | O | X | X | X |
+
 </center>
 
 ## Private 배열에 Public 데이터 할당
