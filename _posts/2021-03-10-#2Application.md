@@ -11,7 +11,7 @@ author: bn-tw2020
 ## Intro
 
 ```
-네트워크 계층을 정리하는 글입니다.
+네트워크를 정리하는 글입니다.
 ```
 
 
@@ -64,7 +64,7 @@ TCP Connection을 위해서 TCP 메시지가 갖다가 온다. 그 후에 HTTP r
 Persistent HTTP는 그러면 TCP Connection을 끊지 않고 진행한다는 것을 이해할 수 있다.
 ```
 
-![HTTP 메시지 request, response](https://bn-tw2020.github.io/2021/02/17/1_HTTP/)  
+[HTTP 메시지 request, response](https://bn-tw2020.github.io/2021/02/17/1_HTTP/)  
 
 
 ## HTTP Stateless
