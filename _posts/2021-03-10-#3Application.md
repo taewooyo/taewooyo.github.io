@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Socket"
+title: "소켓"
 categories: 네트워크
 author: bn-tw2020
 ---
