@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 
-## SD 카드에서 파일 쓰기
+## SD 카드에서 폴더 쓰기
 
 ```
 1. Environment 클래스의 정적 메소드를 이용해 SD카드의 동작 여부 및 관련 폴더 경로 구한다.
@@ -160,6 +160,73 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 myDir.delete();
+            }
+        });
+    }
+}
+```
+
+## 특정 폴더의 하위 폴더 및 파일 접근
+
+```
+1. 지정한 폴더의 하위 폴더 및 파일 목록에 접근하기
+    특정 폴더의 하위 폴더 및 파일 목록은 File.listFiles()메소드 사용하여 접근한다.
+```
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnFilelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시스템 폴더의 폴더/파일 목록" />
+
+        <EditText
+            android:id="@+id/edtFilelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>
+```
+
+```java
+public class MainActivity extends AppCompatActivity {
+    ActivityMainBinding binding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
+
+        ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE}, MODE_PRIVATE);
+
+        binding.btnFilelist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String sysDir = Environment.getRootDirectory().getAbsolutePath();
+                File[] sysFiles = (new File(sysDir).listFiles());
+
+                String strFname;
+                for (int i = 0; i < sysFiles.length; i++) {
+                    if (sysFiles[i].isDirectory() == true)
+                        strFname = "<폴더> " + sysFiles[i].toString();
+                    else
+                        strFname = "<파일> " + sysFiles[i].toString();
+
+                    binding.edtFilelist.setText(binding.edtFilelist.getText() + "\n" + strFname);
+                }
             }
         });
     }
