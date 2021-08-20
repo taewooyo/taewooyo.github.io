@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "DBMS 접속 기술"
-categories: Database
+categories: DB
 author: bn-tw2020
 ---
 * content

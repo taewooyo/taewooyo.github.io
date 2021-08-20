@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[QnA] SQL"
-categories: Database
+categories: DB
 author: bn-tw2020
 ---
 * content

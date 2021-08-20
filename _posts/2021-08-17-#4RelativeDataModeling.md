@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[QnA] 논리적 데이터 모델링(관계 데이터 모델링)"
-categories: Database
+categories: DB
 author: bn-tw2020
 ---
 * content

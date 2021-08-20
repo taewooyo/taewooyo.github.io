@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[QnA] 개념적 데이터 모델링"
-categories: Database
+categories: DB
 author: bn-tw2020
 ---
 * content

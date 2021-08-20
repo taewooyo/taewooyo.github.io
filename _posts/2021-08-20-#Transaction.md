@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[QnA] 트랜잭션"
-categories: Database
+categories: DB
 author: bn-tw2020
 ---
 * content

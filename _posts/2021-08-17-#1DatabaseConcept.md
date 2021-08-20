@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[QnA] 데이터베이스 개념"
-categories: Database
+categories: DB
 author: bn-tw2020
 ---
 * content

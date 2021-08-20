@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[QnA] 관계 데이터 연산"
-categories: Database
+categories: DB
 author: bn-tw2020
 ---
 * content
