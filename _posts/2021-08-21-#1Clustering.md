@@ -45,13 +45,15 @@ author: bn-tw2020
 
 > Active - Active Clustering
 
+<img width="296" alt="스크린샷 2021-08-21 오전 1 01 46" src="https://user-images.githubusercontent.com/66770613/130261329-dfeb7a0b-d3bc-4143-af12-45ce18d70458.png">  
+
 * 클러스터를 구성하는 컴포넌트를 동시에 가동합니다.
 
 * 장점으로 시스템 다운 시간이 짧습니다.
 
   복수의 DB서버가 동시에 동작하고 있어서 한 대가 다운되어 동작 불가되도 남은 서버가 처리합니다.
 
-  시스템이 정지하는 것을 방지할 수 있습니다.
+  시스템이 정지하는 것을 방지할 수 있습니다. CPU와 메모리 이용률이 증가
 
   이것은 웹 서버나 애플리케이션 서버의 클러스터링으로 얻을 수 있는 장점과 같다.
 
@@ -61,7 +63,12 @@ author: bn-tw2020
 
   저장소가 병목되기 때문에 생각한 만큼 성능이 향상되지 않을 수도 있습니다.
 
+  여러 서버가 동시에 운영되서 비용이 많이 발생합니다.
+
+
 > Active - Standby Clustering
+
+<img width="285" alt="스크린샷 2021-08-21 오전 1 02 24" src="https://user-images.githubusercontent.com/66770613/130261378-24b71f3e-e251-4fb1-8baf-f3a0871600ce.png">  
 
 * 클러스터를 구성하는 컴포넌트 중 실제로 가동하는 것은 Active 남은 것은 대기(Standby)하고 있습니다.
 
@@ -69,10 +76,21 @@ author: bn-tw2020
 
   Hot-Standby : 평소에도 StandbyDB가 작동하는 구성
 
-* 장애가 있어났을 시 StandbyDB서버는 어떻게 ActiveDB서버에 장애가 일어난 것을 알 수 있을까?
+* Active-Active 클러스터링에 비해 적은 비용 발생
+
+* 서버가 다운 되었을 때 상태 전환 시 시간이 발생
+
+## Question
+
+* Active-Standby서버에서 장애가 있어났을 시 StandbyDB서버는 어떻게 ActiveDB서버에 장애가 일어난 것을 알 수 있을까?
 
   => StandbyDB서버는 일정 간격으로 ActiveDB에 이상이 없는지 조사하기 위한 통신을 하고 있으며
 
   이 통신은 `Heartbeat`라고 합니다. ActiveDB에 장애가 발생하면 이 신호가 끊기에 
      
   Standby는 Active가 죽었음을 알 수 있다.
+
+
+  ## Reference
+
+  ![](https://dheldh77.tistory.com/entry/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%EB%A7%81Clustering?category=805412)
