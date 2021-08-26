@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "네트워크 계층(1)"
+title: "네트워크 계층이란?"
 categories: 네트워크
 author: bn-tw2020
 ---
