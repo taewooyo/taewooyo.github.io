@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "무선 네트워크"
+title: "무선 네트워크 Wireless"
 categories: 네트워크
 author: bn-tw2020
 ---
