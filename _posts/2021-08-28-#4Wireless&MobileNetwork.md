@@ -107,7 +107,7 @@ author: bn-tw2020
   그래서, 무선 네트워크에서의 MAC Protocol은 **CSMA/CA** 이다.
 
 
-  ## CSMA/CA
+## CSMA/CA
 
   * 처음에 보낼 데이터가 있으면 sender가 carrier sense을 해본다.
   
