@@ -10,7 +10,11 @@ author: bn-tw2020
 ## Intro
 
 * 프로젝트를 진행하면서 유효성 검사를 위해 라이브러리를 찾다가 `express-validator` 보다 `joi`가 많이 쓰인다고 발견했다.
+
 * 그래서 joi를 정리하는 글입니다.
+
+![](https://user-images.githubusercontent.com/66770613/147402439-10d53242-494f-41f5-ac02-3af422405225.png)
+
 
 
 
