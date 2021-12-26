@@ -74,4 +74,4 @@ class Solution {
 
 ## Reference
 
-* [](https://bcp0109.tistory.com/205)
+* [참고자료](https://bcp0109.tistory.com/205)
