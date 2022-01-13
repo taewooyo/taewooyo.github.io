@@ -1,12 +1,12 @@
-
 ---
 layout: post
-title:  "val vs const val"
+title:  " val vs const val"
 categories: Kotlin
 author: bn-tw2020
 ---
 * content
 {:toc}
+
 
 ## const val vs val
 
