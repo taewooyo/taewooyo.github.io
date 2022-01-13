@@ -33,6 +33,7 @@ author: bn-tw2020
 ### val
 
 - `val` 은 **런타임** 시 결정되는 상수로 독립적인 동일한 프로그램 수행 중에 프로그램 수행에 따라 값이 바뀔 수 있다.
+
 ```kotlin
 fun main() {
     val num = sumNumber(40, 20)
@@ -64,16 +65,16 @@ fun sumNumber(a: Int, b: Int): Int = a + b
 
   const val의 코딩 컨벤션은 대문자와 _을 이용을 권장한다.
   
-```kotlin
-fun main() {
-	print(Test.CONST_VAL)
-}
+  ```kotlin
+  fun main() {
+  	print(Test.CONST_VAL)
+  }
 
-class Test {
-	companion object {
+  class Test {
+  	companion object {
 		const val CONST_VAL = 5
-	}
-}
-```
+  	}
+  }
+  ```
 
 - const val는 컴파일 시에 데이터가 메모리에 존재한다. 그래서 인스턴스 생성 후에 접근하지 않고 클래스명.상수명을 통해 접근이 가능하다.
