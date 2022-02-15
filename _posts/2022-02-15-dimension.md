@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "dimension 관리하기"
+categories: Android
+author: bn-tw2020
+---
+* content
+{:toc}
+
+
+## dimension
+
+- 안드로이드 개발 시 xml 상에서 view들의 크기(dp, sp)를 지정해줘야 한다.
+
+  크기 단위에 사용되는 수치를 파일에서 관리가 가능하다.
+
+### res/values/filenames.xml 리소스 파일 생성
+
+- res 폴더의 values 폴더 안에 xml 파일 생성하기
+
+### 리소스 파일 작성하기
+
+- 이 파일의 root 요소는 <resource> 이고, 그 안에서 <dimen> 요소 작성하기
+
+  <dimen> 요소의 속성 중 name이라는 속성은 리소스 참조할 때 ID로 사용한다.
+
+  <dimen> 요소로 관리할 수 있는 측정 단위들은 dp, sp, px, in, mm, pt가 존재한다.
+
+  ```kotlin
+  <?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <dimen name="textview_height">25dp</dimen>
+    <dimen name="textview_width">150dp></dimen>
+    <dimen name="ball_radius">30dp></dimen>
+    <dimen name="font_size">16sp></dimen>
+  </resources>
+  ```
+  
+### 리소스 참조하기
+
+- kotlin에서 참조하기
+
+  R.dimen.ID
+
+  ```kotlin
+  val fontSize: Float = resources.getDimension(R.dimen.font_size)
+  ```
+  
+- xml에서 참조하기
+
+  @dimen/ID
+
+  ```kotlin
+  <TextView
+    android:layout_height="@dimen/textview_height"
+    android:layout_width="@dimen/textview_width"
+    android:textSize="@dimen/font_size"/>
+  ```
