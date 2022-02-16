@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "결과 가져오는 reigsterForActivityResult"
+title:  "결과 가져오는 registerForActivityResult"
 categories: Android
 author: bn-tw2020
 ---
@@ -64,6 +64,26 @@ author: bn-tw2020
 
   Result Callback을 분리해서 구현함으로 Activity 구분할 필요가 없다.
 
+  ```kotlin
+  private lateinit var getResult: ActivityResultLauncher<Intent>
+  
+  override fun onCreate(savedInstancesState: Bundle?) {
+      super.onCreate(savedInstanceState)
+      ...
+    
+      getResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+          if(it.resultCode == RESULT_OK) {
+              ...
+          }
+      }
+      ...
+    
+      btn.secOnclickListener {
+          val intent = Intent(...)
+          getResult.launch(intent)
+      }
+  }
+  ```
 
 
 ## Reference
