@@ -88,4 +88,6 @@ author: bn-tw2020
 
 ## Reference
 
-[Android Developers intents result](https://developer.android.com/training/basics/intents/result)
+[Android Developers intents result](https://developer.android.com/training/basics/intents/result)  
+
+[registerForActivityResult 상속 관계 파악](https://charlezz.medium.com/%EC%95%A1%ED%8B%B0%EB%B9%84%ED%8B%B0-%EA%B2%B0%EA%B3%BC-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0-good-bye-startactivityforresult-onactivityresult-82bafc50edac)
