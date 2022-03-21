@@ -5,7 +5,7 @@ categories: Android
 author: bn-tw2020
 ---
 * content
-  {:toc}
+{:toc}
 
 
 ## recyclerView
