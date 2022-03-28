@@ -148,12 +148,4 @@ suspend fun myRoutine(person: Person) {
 
 ## Reference
 
-- [설명](https://medium.com/@jungil.han/recyclerview-%EA%B0%9C%EB%B0%9C%EC%97%90-%EB%82%A0%EA%B0%9C-%EB%8B%AC%EA%B8%B0-539e08291160)
-
-- [예제](https://voiddani.tistory.com/7)
-
-- [queue을 이용한 리스트 관리](https://jonfhancock.com/get-threading-right-with-diffutil-423378e126d2)
-
-- [Android Developers ListAdapter](https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/ListAdapter)
-
-- [Android Developers DiffUtil](https://developer.android.com/reference/androidx/recyclerview/widget/DiffUtil)
+- [Android Developers Coroutine](https://developer.android.com/kotlin/coroutines?hl=ko)
