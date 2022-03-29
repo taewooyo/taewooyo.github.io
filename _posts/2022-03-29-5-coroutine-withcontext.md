@@ -1,5 +1,5 @@
 ---
-layout: post title:  "withContext"
+layout: post title:  "withContext, runBlocking"
 categories: Android author: bn-tw2020
 ---
 
@@ -87,6 +87,44 @@ GlobalScope.launch(Dispatchers.IO) {
   withContext 코루틴이 종료되면 println(name) 실행
 
 - async와 비슷한 결과값을 리턴하는 코루틴이지만, await()으로 대기하고 결과를 받아올 필요가 없다.
+
+## runBlocking
+
+- runBlocking은 새로운 코루틴을 시작하고 완료까지 현재 스레드를 차단(점유)한다.
+
+- runBlocking이 사용하는 스레드는 호출된 지점의 스레드를 사용하는데
+
+  안드로이드에서 메인스레드 내부에 선언시 runBlocking은 메인스레드를 점유하기 때문에 5초 이상 작업이 발생할 경우 ANR 발생한다.
+
+- 사용하지 권장을 하지 않는 코루틴 빌더라고 합니다.
+
+```kotlin
+fun main() {
+    GlobalScope.launch {
+        val job = launch {
+            delay(3000)
+            println("1")
+        }
+        job.join()
+    }
+    Thread.sleep(1000)
+    println("2")
+}
+
+fun main() = runBlocking {
+    val job = launch {
+        delay(3000)
+        println("1")
+    }
+    println("2")
+}
+```
+
+- GlobalScope는 job의 3초대기 후 1을 출력하지 못하고 main()함수가 종료된다.
+
+  runBlocking을 사용한 아래부분은 3초 대기 후 1까지 출력을 마치고 main()함수가 종료된다.
+
+  runBlocking은 코루틴이 모두 종료할 때 까지 스레드를 점유하기 때문에 main()함수가 종료하지 않는다.
 
 ## Reference
 
