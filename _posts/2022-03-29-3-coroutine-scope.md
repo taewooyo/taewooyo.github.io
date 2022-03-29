@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "코루틴 스코프, 코루틴 컨텍스#"
+title:  "코루틴 스코프, 코루틴 컨텍스"
 categories: Android
 author: bn-tw2020
 ---
@@ -50,6 +50,8 @@ GlobalScope.launch {
 > ViewModelScope
 
 - 안드로이드 jetpack 라이브러리(AAC)에서 코루틴을 쉽게 사용할 수 있도록 라이프사이클에 맞는 스코프를 제공해준다.
+
+- viewModelScope는 Closeable를 구현해서 close() 호출시 coroutineContext를 cancel시키고 있기 때문이다.
 
 ```kotlin
 class MyViewModel: ViewModel() {
