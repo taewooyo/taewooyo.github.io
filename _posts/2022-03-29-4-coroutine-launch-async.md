@@ -1,8 +1,9 @@
 ---
-layout: post title:  "launch, async"
-categories: Android author: bn-tw2020
+layout: post 
+title:  "launch, async"
+categories: Android 
+author: bn-tw2020
 ---
-
 * content {:toc}
 
 ## CoroutineBuilder
