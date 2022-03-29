@@ -13,6 +13,10 @@ author: bn-tw2020
 
   코루틴이 실행될 작업 범위를 지정할 수 있다.
 
+
+
+
+
 > CoroutineScope
 
 - 사용자 정의 스코프
