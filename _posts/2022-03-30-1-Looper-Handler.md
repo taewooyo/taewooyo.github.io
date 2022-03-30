@@ -4,7 +4,8 @@ title:  "안드로이드 Looper와 Handler"
 categories: Android 
 author: bn-tw2020
 ---
-* content {:toc}
+* content
+{:toc}
 
 ## Looper와 Handler
 
