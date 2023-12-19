@@ -1,20 +1,16 @@
 # Site settings
-title: Brand-New Taewoo
-brief-intro: 새로운 것을 도전하고 기록하자
+title: Stitch
+brief-intro: Android Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://bn-tw2020.github.io" # the base hostname & protocol for your site
+url: "https://taewooyo.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
-# twitter_username:
-# facebook_username:
-github_username: bn-tw2020
-# email: gaohaoyang126@126.com
-# weibo_username: 3115521wh
-# zhihu_username: gaohaoyang
-# linkedIn_username: gaohaoyang
-# dribbble_username:
+github_username: taewooyo
+email: gaohaoyang126@126.com
+linkedIn_username: 태우-남-449403226
+insta_username: taewooyo
 
 description_footer: ""
 
@@ -32,19 +28,24 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# port
-# port: 1234
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# port (default = 4000)
+# port: 4000
 
 # url
 category_dir: category/
 tag_dir: tag/
 
 # excerpt
-excerpt_separator: "\n\n\n\n"
+excerpt_separator: "\n\n\n"
 
 # paginate
 gems: [jekyll-paginate]
-paginate: 10
+paginate: 6
 
-plugins:
-  - jekyll-paginate
+future: true
+incremental: false
+regenerate : true

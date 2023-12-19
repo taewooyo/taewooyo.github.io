@@ -9,37 +9,64 @@ type: page
 * content
 {:toc}
 
-## Who am I
+## Who is
 
--   현재 공부중인 학생입니다.
--   기록 하는 걸 습관화 시키는 중
--   배우고 싶은 것이 많은 사람입니다.
--   배운걸 남기는 걸 꾸준히 진행할 것입니다.
+* <img src="/assets/img/logo/zuminternet.jpeg" style="max-width: 3%; vertical-align: text-bottom;"> 줌인터넷에서 Android 개발을 하고 있습니다.
+
+( 2023.01.02 ~ )
+* <img src="/assets/img/logo/book.png" style="max-width: 3%; vertical-align: text-bottom;"> : 궁금한 것을 깊게 파보려고 노력합니다.
+* <img src="/assets/img/logo/mentoring.png" style="max-width: 4%; vertical-align: text-bottom;"> : 알고 있는 내용을 공유하는 것을 좋아합니다.
 
 ---
 
 ## Contact
 
--   GitHub : [bn-tw2020 <i class="fa fa-github" aria-hidden="true"></i>](https://github.com/bn-tw2020)
--   BOJ : [<i class="fa fa-code" aria-hidden="true"></i>](https://www.acmicpc.net/user/ap4o)
--   <i class="fa fa-envelope-o" aria-hidden="true"></i> : skaxodn97@gmail.com
+* <img src="/assets/img/logo/github.png" style="max-width: 3%; vertical-align: text-bottom;"> :  [{{site.github_username}}](https://github.com/{{site.github_username}})
+
+* <img src="/assets/img/logo/linkedin.png" style="max-width: 3%; vertical-align: text-bottom;"> : [Kiyong Shin](https://www.linkedin.com/in/{{site.linkedIn_username}})
+
+* <img src="/assets/img/logo/instagram.png" style="max-width: 3%; vertical-align: text-bottom;"> :  [{{site.insta_username}}](https://www.instagram.com/{{site.insta_username}})
+
+* <img src="/assets/img/logo/email.png" style="max-width: 3%; vertical-align: text-bottom;"> : skaxodn97@gmail.com
+
+---
+
+## OpenSource
+
+* [[Volcano] heatmap chart library in jetpack compose](https://github.com/taewooyo/volcano)
+
+* [[Shaker] Modifier's optimally created rotation, translation, and zoom animations are fully customizable for Android](https://github.com/taewooyo/shaker)
 
 ---
 
 ## Time Line
 
+### 2023
+
+* 1월 ~ 줌 인터넷 안드로이드 엔지니어 취업
+
+### 2022
+
+* 7월 ~ 8월 우아한형제들 우아한 테크 캠프 교육형 인턴 활동
+* 1월 ~ 6월 코드스쿼드 안드로이드 마스터즈 활동
+* 1월 (2주간) 삼성 SDS 대학생 동계 알고리즘 특강
+
 ### 2021
 
+* 9월 교내 SW역량평가(TOPCIT) 최우수 수상
 * 8월 20일 정보처리기사 취득
 * 4월 11일 OPIc IM2
+* 3월 공과대학 우수 학생 수상
 * ~ 2월 27일 CADI 프론티어 수료
 
 ### 2020
 
 * 11월 2일 ~ 12월 11일 KSA 블록체인 개발 교육
+* 9월 공과대학 우수 학생 수상
 * 9월 13일 ~ 12월 24일 IoT보안연구센터 근로 활동
 * 8월 16일 ~ CADI 프론티어 7기
 * 8월 11일 ~ 12월 21일 SRC 멘토
+* 3월 (4주) 길벗 IT Python 도서 리뷰
 
 ### 2018, 2019
 
