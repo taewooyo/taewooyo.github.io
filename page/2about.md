@@ -11,10 +11,8 @@ type: page
 
 ## Who is
 
-* <img src="/assets/img/logo/zuminternet.jpeg" style="max-width: 3%; vertical-align: text-bottom;"> 줌인터넷에서 Android 개발을 하고 있습니다.
-
-( 2023.01.02 ~ )
-* <img src="/assets/img/logo/book.png" style="max-width: 3%; vertical-align: text-bottom;"> : 궁금한 것을 깊게 파보려고 노력합니다.
+* <img src="/assets/img/logo/zuminternet.jpeg" style="max-width: 3%; vertical-align: text-bottom;"> 줌인터넷에서 Android 개발을 하고 있습니다. ( 2023.01.02 ~ )
+* <img src="/assets/img/logo/book.png" style="max-width: 3%; vertical-align: text-bottom;">  : 궁금한 것을 깊게 파보려고 노력합니다.
 * <img src="/assets/img/logo/mentoring.png" style="max-width: 4%; vertical-align: text-bottom;"> : 알고 있는 내용을 공유하는 것을 좋아합니다.
 
 ---
@@ -23,7 +21,7 @@ type: page
 
 * <img src="/assets/img/logo/github.png" style="max-width: 3%; vertical-align: text-bottom;"> :  [{{site.github_username}}](https://github.com/{{site.github_username}})
 
-* <img src="/assets/img/logo/linkedin.png" style="max-width: 3%; vertical-align: text-bottom;"> : [Kiyong Shin](https://www.linkedin.com/in/{{site.linkedIn_username}})
+* <img src="/assets/img/logo/linkedin.png" style="max-width: 3%; vertical-align: text-bottom;"> : [Taewoo Nam](https://www.linkedin.com/in/{{site.linkedIn_username}})
 
 * <img src="/assets/img/logo/instagram.png" style="max-width: 3%; vertical-align: text-bottom;"> :  [{{site.insta_username}}](https://www.instagram.com/{{site.insta_username}})
 
