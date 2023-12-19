@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2023년도 회고
+title: "2023년도 회고"
 categories: etc
 author: taewooyo
 ---
