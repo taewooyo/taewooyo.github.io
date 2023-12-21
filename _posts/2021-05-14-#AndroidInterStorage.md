@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "파일 처리(sd카드)"
-categories: 안드로이드
+categories: 동아리
 author: bn-tw2020
 ---
  * content

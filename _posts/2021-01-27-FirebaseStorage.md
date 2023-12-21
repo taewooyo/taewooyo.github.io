@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Firebase Stoarge"
-categories: 안드로이드
+categories: 동아리
 author: bn-tw2020
 ---
 * content

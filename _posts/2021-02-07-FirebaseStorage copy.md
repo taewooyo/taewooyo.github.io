@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "카메라 기능과 파이어베이스 이미지 저장"
-categories: 안드로이드
+categories: 동아리
 author: bn-tw2020
 ---
 * content
